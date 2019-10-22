@@ -1,0 +1,136 @@
+{
+  "users": {
+    "user1": {
+      "name": "Arun Prajapati",
+      "email": "arun@gmail.com",
+      "friends": ["user2", "user3"],
+      "groups": ["groupId1"],
+      "expenses": ["expense1", "expense2", "expense3"]
+    },
+    "user2": {
+      "name": "Yogishankar",
+      "email": "yogi@gmail.com",
+      "friends": ["user1", "user3"],
+      "groups": ["groupId1"],
+      "expenses": ["expense1", "expense3"]
+    },
+    "user3": {
+      "name": "Saurav Choudhury",
+      "email": "saurav@gmail.com",
+      "friends": ["user1", "user2"],
+      "groups": ["groupId1"],
+      "expenses": ["expense1", "expense2", "expense3"]
+    }
+  },
+  "groups": {
+    "groupId1": {
+      "name": "Group1",
+      "members": ["userid1", "userid2", "userid3"],
+      "deleteBy": "null/deletorId",
+      "deletedAt": "null/date"
+    }
+  },
+  "expenses": {
+    "expense1": {
+      "description": "Food",
+      "creationMethod": "equal",
+      "groupId": "group1",
+      "cost": 400,
+      "repayments": [
+        {
+          "from": "user2",
+          "to": "user1",
+          "amount": 133.33
+        },
+        {
+          "from": "user3",
+          "to": "user1",
+          "amount": 133.33
+        }
+      ],
+      "createdBy": "user1",
+      "createAt": "date",
+      "users": {
+        "user1": {
+          "netBalance": 166.66,
+          "owedShare": 133.33,
+          "paidShare": 400
+        },
+        "user2": {
+          "netBalance": -133.66,
+          "owedShare": 133.33,
+          "paidShare": 0
+        },
+        "user3": {
+          "netBalance": -133.33,
+          "owedShare": 133.33,
+          "paidShare": 0
+        }
+      }
+    },
+    "expense2": {
+      "description": "Taxi",
+      "creationMethod": "equal",
+      "friendId": "user3",
+      "cost": 400,
+      "repayments": [
+        {
+          "from": "user3",
+          "to": "user1",
+          "amount": 200.0
+        }
+      ],
+      "createdBy": "user1",
+      "createAt": "date",
+      "users": {
+        "user1": {
+          "netBalance": 200,
+          "owedShare": 200,
+          "paidShare": 400
+        },
+        "user3": {
+          "netBalance": -200,
+          "owedShare": 200,
+          "paidShare": 0
+        }
+      }
+    },
+    "expense3": {
+      "description": "Stationary",
+      "creationMethod": "equal",
+      "groupId": "group1",
+      "cost": 600,
+      "repayments": [
+        {
+          "from": "user1",
+          "to": "user3",
+          "amount": 200
+        },
+        {
+          "from": "user2",
+          "to": "user3",
+          "amount": 200
+        }
+      ],
+      "createdBy": "user1",
+      "createAt": "date",
+      "users": {
+        "user1": {
+          "netBalance": -200,
+          "owedShare": 200,
+          "paidShare": 0
+        },
+        "user2": {
+          "netBalance": -200,
+          "owedShare": 200,
+          "paidShare": 0
+        },
+        "user3": {
+          "netBalance": 400,
+          "owedShare": 200,
+          "paidShare": 600
+        }
+      }
+    }
+  }
+}

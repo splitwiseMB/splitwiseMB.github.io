@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Miscellaneous */
+.btn-orange {
+  background: #ff652f;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background: #ee541e;
+  color: #fff;
+}
+/* /Miscellaenous */
+
+/* Home Page */
+.font-mono {
+  font-family: "Montserrat";
+}
+/* home page header */
+.green-color {
+  color: #5bc5a7;
+}
+
+.green-background {
+  color: #fff;
+  background-color: #5bc5a7;
+  box-shadow: 0 2px 0 0 rgba(55, 59, 63, 0.5);
+}
+
+.slider {
+  padding: 0 10rem;
+  background-size: 1250px;
+  background-position: center 0px;
+  background-image: url("/img/facets.png");
+  background-repeat: repeat-x;
+}
+.slider-left {
+  width: 50%;
+}
+.slider-right {
+  padding: 50px 25px;
+  box-sizing: border-box;
+}
+.icon-container {
+  width: 14rem;
+}
+.slider-icon {
+  opacity: 0.5;
+  font-size: 3rem;
+}
+#plane-icon {
+  color: #5bc5a7;
+}
+#home-icon {
+  color: #8656cd;
+}
+#heart-icon {
+  color: #a6002f;
+}
+#all-icon {
+  color: #383b3f;
+}
+.sign-up-btn {
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+}
+.slider-slides {
+  font-size: 25rem;
+  opacity: 0.4;
+}
+.slider-slides:hover {
+  opacity: 1;
+}
+.slider h1 {
+  font-family: "Montserrat";
+  max-width: 23rem;
+  font-weight: 700;
+}
+.slider p {
+  max-width: 20rem;
+  font-size: 1.125rem;
+  margin: 1.5rem 0;
+}
+/* /Home Page */
+
+/* Signup */
+
+.signup h3,
+h6 {
+  font-weight: normal;
+}
+
+.errorMsg {
+  display: none;
+}
+
+.main {
+  justify-content: center;
+  margin-top: 6em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introText,
+.addGroupText {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #a1a2a3;
+  margin-bottom: 1em;
+}
+
+.row {
+  width: 100%;
+  justify-content: center;
+}
+
+.logo img,
+.addApartment-logo img {
+  width: 12em;
+}
+
+.form {
+  margin-left: 12em;
+}
+
+.addApartment {
+  margin-left: 2em;
+}
+
+.signUpBtn {
+  padding: 0.4em;
+  font-size: 1.4em;
+}
+
+.signup input[type="text"],
+.bigbox {
+  font-size: 32px;
+}
+
+.signup input[type="email"],
+input[type="password"] {
+  font-size: 20px;
+}
+
+.displayOnChange {
+  display: none;
+}
+
+.App-logo-login {
+  height: 2em;
+}
+.navbar .logo {
+  width: 6em;
+}
+
+/* Screen width 800px */
+@media screen and (max-width: 992px) {
+  .signup-logo {
+    display: none;
+  }
+  .addApartment-logo {
+    display: none;
+  }
+  .addFriendForm input {
+    width: 13em;
+  }
+  .addFriendForm {
+    justify-content: flex-start;
+  }
+}
+
+/* /Signup */
+
+/* navbar */
+.navbar {
+  background: #5bc5a7;
+}
+.navbar .logo {
+  width: 6em;
+}
+
+.homeNav {
+  background: #fff;
+}
+
+.userName {
+  color: #fff;
+}
+
+.dropdown-toggle {
+  color: #fff;
+  cursor: pointer;
+}
+.dropdown-toggle:hover {
+  background: #449c83;
+}
+/* /navbar */
+
+/* Dashboard */
+.welcome-content {
+  margin-left: 4em;
+}
+.dash-logo {
+  height: 3em;
+}
+.welcomeMsg {
+  font-size: 2em;
+  margin-left: 0.2em;
+}
+.question {
+  margin-top: 2em;
+  text-align: center;
+}
+.userDummyPic,
+.addApartment .profileImg {
+  height: 1.5em;
+}
+.orange-person img {
+  height: 20em;
+}
+.addGrpBtn,
+.addAptBtn {
+  padding: 0.4em;
+  font-size: 1.7em;
+  width: 15em;
+  margin-bottom: 0.6em;
+}
+.addIconBtn {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.skipBtn {
+  padding: 0.4em;
+  font-size: 1.7em;
+  width: 15em;
+}
+/* /Dashboard */
+
+/* createGroup */
+.addApartment .userArea {
+  justify-content: flex-start;
+}
+.addFriendForm {
+  margin: 0;
+}
+.userArea {
+  margin: 0;
+}
+.addFriendForm input {
+  padding: 0 0.2em;
+}
+.removeAddFriendForm {
+  color: red;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.appendNewFriendForm {
+  cursor: pointer;
+  color: blue;
+}
+.appendNewFriendForm:hover {
+  text-decoration: underline;
+}
+/* /createGroup */
+
+/* dashboard-main */
+.dash-main-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  box-shadow: 4px 0 3px 1px #eee, -4px 0 2px 1px #eee;
+  min-height: 90vh;
+}
+.friendPic {
+  height: 1.2em;
+}
+
+.colorBlue {
+  color: #5bc5a7;
+}
+
+.logoDash {
+  height: 1.2em;
+}
+.grayImg {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+}
+.left-sidebar .row {
+  justify-content: flex-start;
+  color: #999;
+  cursor: pointer;
+  margin: 0.2em 0;
+  width: 80%;
+  padding: 0.5em;
+}
+.left-sidebar .row:hover {
+  background: #eee;
+}
+.lh {
+  line-height: 1;
+}
+.appendGroupNames p,
+.appendFriendNames p {
+  margin: 3px 0;
+}
+.appendGroupNames a:hover,
+.appendFriendNames a:hover {
+  text-decoration: none;
+}
+.groupSidebar .row,
+.friendsSidebar .row {
+  cursor: default;
+}
+.btn-blue {
+  background: #5bc5a7;
+  color: #fff;
+}
+.btn-blue:hover {
+  background: #4ab496;
+  color: #fff;
+}
+.dash-header {
+  background: #eee;
+}
+.dash-header .row {
+  margin: 0;
+}
+.dash-main-content {
+  padding: 0;
+}
+.logo-dash-right {
+  height: 10em;
+}
+.labelListsSidebar {
+  text-transform: uppercase;
+}
+/* /dashboard-main */
+
+/* loader */
+.loader {
+  margin: 40vh auto;
+  text-align: center;
+  color: grey;
+  font-size: 1.7em;
+}
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-spinner div {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: grey;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* /loader */
